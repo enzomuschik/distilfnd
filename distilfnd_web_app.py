@@ -80,6 +80,7 @@ class DistilFND(nn.Module):
         # Final model prediction via Softmax activation function
         self.softmax = nn.Softmax(dim=1)
 
+    @st.cache()
     def forward(self, title_input_ids, title_attention_mask, image, cm_input_ids, cm_attention_mask):
         """
         Forward function feeds input data to layers of DistilFND model --> operational function in
@@ -161,6 +162,7 @@ class DistilFND(nn.Module):
         # Returning loaded and prediction ready DistilFND model
         return distilFND
 
+    @st.cache(show_spinner=False)
     def tokenize(self, post_title, post_comments):
         """
         Tokenize function in order to convert raw input data into tokenized feature representations
@@ -237,6 +239,7 @@ class DistilFND(nn.Module):
         # Returning tokenized encoding input_ids and attention_mask tensors for post title and comments
         return title_input_ids, title_attention_mask, comment_input_ids, comment_attention_mask
 
+    @st.cache()
     def process_image(self, image):
         """
         Processing function to convert raw input image into feature vector representation
@@ -289,7 +292,6 @@ rcParams["figure.figsize"] = 2, 2
 
 class DataLoader():
 
-    # @st.cache(show_spinner=False)
     def __init__(self, path, file, image_path):
         """
         DataLoader class is used to fetch and display input data, get next sample
@@ -359,6 +361,7 @@ class DataLoader():
         # Return comment sequence list
         return comments
 
+    @st.cache()
     def get_sample(self, post_id):
         """
         Function to fetch post title and comment sequence, post image and ground truth /
@@ -388,6 +391,7 @@ class DataLoader():
         # Returning post_title, image, post_comments and gold_label variables
         return post_title, image, post_comments, gold_label
 
+    @st.cache()
     def get_gold_label(self, post_id):
         """
         Fetching corresponding ground truth / gold label for given sample post with
@@ -474,6 +478,7 @@ distilfnd = DistilFND(len(CLASS_NAMES))
 distilfnd = distilfnd.load_model()
 
 # Main application
+@st.cache(suppress_st_warning=True, show_spinner=False)
 def main():
 
     # Setting sidebar title
