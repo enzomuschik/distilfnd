@@ -155,7 +155,7 @@ class DistilFND(nn.Module):
         # Initializing DistilFND model class with CLASS_NAMES constant (length of 6 classes)
         distilFND = DistilFND(len(CLASS_NAMES))
         # Loading dictionary state of saved DistilFND and assigning resources to CPU
-        distilFND.load_state_dict(torch.load("dataset/models/distilfnd.pth", map_location=torch.device("cpu")))
+        distilFND.load_state_dict(torch.load("models/distilfnd.pth", map_location=torch.device("cpu")))
 
         # Returning loaded and prediction ready DistilFND model
         return distilFND
