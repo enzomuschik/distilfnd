@@ -48,6 +48,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 class DistilFND(nn.Module):
 
+    @st.cache(show_spinner=False)
     def __init__(self, num_classes):
         """
         Constructor function for initializing DistilFND model
@@ -287,6 +288,8 @@ sns.set_palette(sns.color_palette(COLOR_PALETTE))
 rcParams["figure.figsize"] = 2, 2
 
 class DataLoader():
+
+    # @st.cache(show_spinner=False)
     def __init__(self, path, file, image_path):
         """
         DataLoader class is used to fetch and display input data, get next sample
@@ -472,7 +475,6 @@ distilfnd = distilfnd.load_model()
 
 # Main application
 def main():
-
 
     # Setting sidebar title
     st.sidebar.markdown("**Fakeddit - Samples**")
