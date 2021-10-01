@@ -9,7 +9,7 @@ https://firstdraftnews.org/articles/fake-news-complicated/
 The entire source code is provided here for research purposes regarding Fake News and its subtypes. Further,
 the models and its variants were developed by myself in the context of my master thesis with the title:
 
-*Explanative detection of fake news with deep learning*
+*Explanatory detection of fake news with deep learning*
 
 In my experiment, I conducted an ablation study to empricially evaluate if certain model components contribute
 more or less to high predcticion/classification accuracy scores. In total 4 variants of the model wear developed:
