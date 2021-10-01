@@ -2,7 +2,7 @@
 """
 Author: Enzo Muschik
 Date: 26.09.2021
-Master thesis: Explainable detection of fake news with Deep Learning
+Master thesis: Explanatory detection of fake news with Deep Learning
 University: University of Hagen, Hagen, Germany, Faculty for Mathematics and Computer Science
 """
 
