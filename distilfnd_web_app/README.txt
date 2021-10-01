@@ -2,7 +2,7 @@
 
 Autor: Enzo Muschik
 Datum: 29.09.2021
-Masterarbeit: Explainable detection of fake news with Deep Learning
+Masterarbeit: Explanatory detection of fake news with Deep Learning
 Universität: FernUniversität in Hagen, Fakultät für Mathematik und Informatik
 
 ###################################################
