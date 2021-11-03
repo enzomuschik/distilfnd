@@ -126,5 +126,11 @@ The complete Fakeddit benchmark dataset and background information can be found 
 4. https://drive.google.com/file/d/1cjY6HsHaSZuLVHywIxD5xQqng33J5S2b/view (Download image data)
 5. https://drive.google.com/drive/folders/150sL4SNi5zFK8nmllv5prWbn0LyvLzvo (Download comment data)
 
-
+~~~~
+@article{
+  title={Explanatory detection of fake News with deep learning},
+  author={Enzo Muschik},
+  year={2021}
+}
+~~~~
 
