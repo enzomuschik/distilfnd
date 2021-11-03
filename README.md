@@ -128,7 +128,7 @@ The complete Fakeddit benchmark dataset and background information can be found 
 
 # Citation
 
-#### If you use knowledge, findings, source code or general information from this repository, please cite as:
+#### If you use knowledge, findings, source code or information in general from this repository, please cite as:
 ~~~~
 @masterthesis{
   title={Explanatory detection of fake News with deep learning},
